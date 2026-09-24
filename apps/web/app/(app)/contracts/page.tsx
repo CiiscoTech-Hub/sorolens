@@ -145,6 +145,7 @@ function TrackContractModal({ onClose, onSuccess }: TrackModalProps) {
             onClick={onClose}
             className="rounded-md p-1 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
             aria-label="Close modal"
+            title="Close modal"
           >
             ✕
           </button>
