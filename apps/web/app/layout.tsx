@@ -3,10 +3,29 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Sorolens",
-  description: "Indexed observability for Soroban smart contracts",
+  metadataBase: new URL("https://sorolens.dev"),
+  title: {
+    default: "Sorolens — Indexed Observability for Soroban",
+    template: "%s | Sorolens",
+  },
+  description:
+    "Indexed observability for Soroban smart contracts — events, invocations, storage, and anomaly detection on Stellar.",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Sorolens",
+    title: "Sorolens — Indexed Observability for Soroban",
+    description:
+      "Indexed observability for Soroban smart contracts — events, invocations, storage, and anomaly detection on Stellar.",
+    url: "https://sorolens.dev",
+  },
+  alternates: {
+    canonical: "https://sorolens.dev",
   },
 };
 
