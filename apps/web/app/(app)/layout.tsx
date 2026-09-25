@@ -1,7 +1,7 @@
+import { ThemeToggle } from "@/components/ThemeToggle";
 import Link from "next/link";
 import { NetworkProvider } from "@/lib/network";
 import { NetworkSelector } from "@/components/NetworkSelector";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
